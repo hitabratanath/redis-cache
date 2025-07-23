@@ -137,33 +137,20 @@ Clients speak the Redis RESP protocol over raw TCP (port 6379 by default).
 1. **Install dependencies**
 
    ```bash
-   npm install
+   bun i
    ```
 
-2. **Build**
-
-   ```bash
-   npm run build
-   ```
-
-3. **Configure**  
+2. **Configure**  
    Copy `.env.example` → `.env` and edit if needed.
 
-4. **Run the server**
+3. **Run the dev server**
 
    ```bash
-   npm start
+   bun run dev
    ```
 
-5. **Test with redis‑cli**
+4. **Run tests**
 
    ```bash
-   redis-cli -p 6379
-   > PING
-   PONG
-   ```
-
-6. **Run tests**
-   ```bash
-   npm test
+   bun run test
    ```
